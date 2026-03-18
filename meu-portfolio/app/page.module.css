@@ -40,6 +40,7 @@
   border-radius: 20px;
   max-width: 500px;
   height: auto;
+  width: 100%;
 }
 
 .sobreInfo{ 
@@ -55,6 +56,17 @@
   text-decoration:underline;
 }
 
+.sobreInfo a:hover{
+  color: #4f2b02;
+}
+
+.fotoColuna {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 26px;
+}
+
 .minhasSociais{
   display: inline-flex;
   align-items: center;
@@ -64,6 +76,7 @@
   background-color: #4f2b02;
   border-radius: 14px;
   transition: background-color 0.2s ease, transform 0.2s ease;
+  margin-top: 8px;
 }
 
 .minhasSociais:hover {
@@ -80,4 +93,39 @@
   display: flex;
   flex-direction: row;
   gap: 12px;
+  justify-content: center;
+  width: 100%;  
+}
+
+.skills {
+  display: flex;
+  margin-top: 40px;
+}
+
+.carrossel {
+  background-color: #3b1f00;
+  border-radius: 20px;
+  padding: 14px 28px;
+  overflow: hidden;
+  width: 620px;
+}
+
+.tecnol {
+  display: flex;
+  gap: 24px;
+  animation: slide 20s linear infinite;
+}
+
+.tecnol img {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+.carrossel:hover {
+  background-color: #174e57;
+}
+
+@keyframes slide {
+  to { transform: translateX(-832px); }
 }

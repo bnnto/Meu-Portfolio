@@ -6,15 +6,78 @@
   justify-content: center;
   gap: 20px;
   padding: 10px 24px;
-  background-color: #ddd5ca;
+  backdrop-filter: blur(10px);
+  background-color: transparent;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 } 
 
 .barra a{
   text-decoration: none;
   color: #4f2b02;
-  background-color: #ddd5ca;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .barra a:hover{
   color: #174e57;
+}
+
+.sobre{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  padding: 80px 24px; 
+  color: #4f2b02;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: justify;
+}
+
+.imgFluid {
+  padding: 0.25rem;
+  border-radius: 20px;
+  max-width: 500px;
+  height: auto;
+}
+
+.sobreInfo{ 
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 650px;
+  font-size: large;
+}
+
+.sobreInfo a{
+  color: #174e57;
+  text-decoration:underline;
+}
+
+.minhasSociais{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: #4f2b02;
+  border-radius: 14px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.minhasSociais:hover {
+  background-color: #174e57;
+  transform: scale(1.08);
+}
+
+.minhasSociais img {
+  width: 40px;
+  height: 40px;
+}
+
+.divSociais{
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
 }

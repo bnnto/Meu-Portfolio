@@ -17,10 +17,12 @@
   text-decoration: none;
   color: #4f2b02;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-weight: 500;
 }
 
 .barra a:hover{
   color: #174e57;
+  transform: scale(1.03);
 }
 
 .sobre{
@@ -43,6 +45,11 @@
   width: 100%;
 }
 
+.imgFluid:hover{
+  transform: scale(1.03);
+  transition: 0.2s ease;
+}
+
 .sobreInfo{ 
   display: flex;
   flex-direction: column;
@@ -53,7 +60,6 @@
 
 .sobreInfo a{
   color: #174e57;
-  text-decoration:underline;
 }
 
 .sobreInfo a:hover{
@@ -67,39 +73,9 @@
   gap: 26px;
 }
 
-.minhasSociais{
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 48px;
-  height: 48px;
-  background-color: #4f2b02;
-  border-radius: 14px;
-  transition: background-color 0.2s ease, transform 0.2s ease;
-  margin-top: 8px;
-}
-
-.minhasSociais:hover {
-  background-color: #174e57;
-  transform: scale(1.08);
-}
-
-.minhasSociais img {
-  width: 40px;
-  height: 40px;
-}
-
-.divSociais{
-  display: flex;
-  flex-direction: row;
-  gap: 12px;
-  justify-content: center;
-  width: 100%;  
-}
-
 .skills {
   display: flex;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 .carrossel {
@@ -124,8 +100,91 @@
 
 .carrossel:hover {
   background-color: #174e57;
+  transform: scale(1.01);
+  transition: 0.2s ease;
 }
 
 @keyframes slide {
   to { transform: translateX(-832px); }
+}
+
+.footer{
+  background-color: #3b1f00;
+  margin-top: 60px;
+  padding: 40px;
+}
+
+.retang{
+  background-color: #f5f0e8;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 40px 150px;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 200px;
+}
+
+.footerEsq{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 0;
+}
+
+.footerNome{
+  color: #4f2b02;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.footerC{
+  color: #4f2b02;
+  font-size: 1.15rem;
+  margin: 0;
+}
+
+.footerDir{
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  gap: 8px;
+}
+
+.footerDir h3{
+  font-size: 1.4rem;
+  color:#4f2b02;
+  margin: 0;
+}
+
+.divSociais{
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.minhasSociais{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: #4f2b02;
+  border-radius: 14px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  margin-top: 8px;
+}
+
+.minhasSociais:hover {
+  background-color: #174e57;
+  transform: scale(1.08);
+  transition: 0.3s ease;
+}
+
+.minhasSociais img {
+  width: 40px;
+  height: 40px;
 }

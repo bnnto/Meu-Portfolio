@@ -10,25 +10,8 @@ export default function Home() {
       </div>
 
       <section id="sobre" className={styles.sobre}>
-        <div className={styles.fotoSociais}>
-          <img src="/foto.jpeg" alt="Minha Foto" className={styles.imgFluid}></img>
+        <img src="/foto.jpeg" alt="Minha Foto" className={styles.imgFluid}></img>
 
-          <div className={styles.divSociais}>
-              <a href="https://github.com/bnnto" target="_blank" rel="noopener noreferrer" className={styles.minhasSociais}>
-                <img src="/github.svg"/>
-              </a>
-              <a href="https://www.linkedin.com/in/bento-guilherme/" target="_blank" rel="noopener noreferrer" className={styles.minhasSociais}>
-                <img src="/linkedin.svg"/>
-              </a>
-              <a href="mailto:gbento555@gmail.com" target="_blank" rel="noopener noreferrer" className={styles.minhasSociais}>
-                <img src="/email.svg"/>
-              </a>
-              <a href="/Currículo-BentoGuilherme.pdf" target="_blank" rel="noopener noreferrer" className={styles.minhasSociais}>
-                <img src="/curriculo.svg"/>
-              </a>
-            </div>
-          </div>
-          
         <div className={styles.sobreInfo}>
           <h2>Bento Guilherme Gomes Oliveira</h2>
           <p>Estudante de Ciência da Computação - <a href="https://portal.unicap.br/" target="_blank" rel="noopener noreferrer">Universidade Católica de Pernambuco</a></p>
@@ -70,9 +53,36 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="projetos"></section>
+      <section id="projetos" className={styles.projetos}>
+        
 
-      <section id="experiencias"></section>
+      </section>
+
+      <footer id="contato" className={styles.footer}>
+        <div className={styles.retang}>
+          <div className={styles.footerEsq}>
+            <p className={styles.footerNome}>Bento Guilherme</p>
+            <p className={styles.footerC}>© 2026 por <b>bnnto</b></p>
+          </div>
+          <div className={styles.footerDir}>
+            <h3 className={styles.footerContato}>Contato</h3>
+            <div className={styles.divSociais}>
+              <a href="https://github.com/bnnto" target="_blank" rel="noopener noreferrer" className={styles.minhasSociais}>
+                <img src="/github.svg"/>
+              </a>
+              <a href="https://www.linkedin.com/in/bento-guilherme/" target="_blank" rel="noopener noreferrer" className={styles.minhasSociais}>
+                <img src="/linkedin.svg"/>
+              </a>
+              <a href="mailto:gbento555@gmail.com" target="_blank" rel="noopener noreferrer" className={styles.minhasSociais}>
+                <img src="/email.svg"/>
+              </a>
+              <a href="/Currículo-BentoGuilherme.pdf" target="_blank" rel="noopener noreferrer" className={styles.minhasSociais}>
+                <img src="/curriculo.svg"/>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </> 
   );
 }

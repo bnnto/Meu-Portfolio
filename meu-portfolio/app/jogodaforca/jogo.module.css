@@ -1,0 +1,12 @@
+.classname{
+    font-size: 5rem;
+    background-color: red;
+    color:yellow;
+}
+
+.link{
+    font-size: 5rem;
+    background-color: aqua;
+    color:aliceblue;
+    text-decoration: overline;
+}

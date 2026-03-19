@@ -37,6 +37,10 @@
   text-align: justify;
 }
 
+.sobre h2{
+  color: #174e57;
+}
+
 .imgFluid {
   padding: 0.25rem;
   border-radius: 20px;
@@ -135,7 +139,7 @@
 }
 
 .footerNome{
-  color: #4f2b02;
+  color: #174e57;
   font-size: 1.5rem;
   font-weight: 700;
   margin: 0;
@@ -156,7 +160,7 @@
 
 .footerDir h3{
   font-size: 1.4rem;
-  color:#4f2b02;
+  color:#174e57;
   margin: 0;
 }
 
@@ -187,4 +191,18 @@
 .minhasSociais img {
   width: 40px;
   height: 40px;
+}
+
+::-webkit-scrollbar{
+  background-color: #3b1f00;
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #f5f0e8;
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:active{
+  background-color: #174e57;
 }

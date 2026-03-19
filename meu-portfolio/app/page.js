@@ -7,6 +7,7 @@ export default function Home() {
         <a href="#sobre">Sobre mim</a>
         <a href="#projetos">Projetos</a>
         <a href="#contato">Contato</a>
+        <a href="/jogodaforca" rel="noopener noreferrer">Jogo da Forca</a>
       </div>
 
       <section id="sobre" className={styles.sobre}>

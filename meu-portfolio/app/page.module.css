@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Annapurna+SIL&display=swap');
+
 .barra{
   max-height: 52px;
   min-height: 45px;
@@ -16,7 +18,7 @@
 
 .barra a{
   text-decoration: none;
-  color: var(--preto);
+  color: light-dark(black, beige);
   font-weight: 600;
   letter-spacing: 0.02em;
   padding: 10px 12px;  
@@ -26,8 +28,8 @@
 }
 
 .barra a:hover{
-  color: var(--textBg);
-  background-color: var(--bgMar);
+  color: light-dark(beige, black);
+  background-color: light-dark(#4f2b02, #94A3B8);
 }
 
 .home{
@@ -45,12 +47,12 @@
   align-items: center;
   gap: 80px;
   padding: 80px 24px; 
-  color: var(--textMar);
+  color: light-dark(#4f2b02, #94A3B8);
   text-align: justify;
 }
 
 .sobre h2{
-  color: var(--textAz);
+  color: light-dark(#3E1F00, #E2E8F0);
 }
 
 .imgFluid {
@@ -75,12 +77,14 @@
 }
 
 .sobreInfo a{
-  color: var(--textAz);
+  font-weight: 500;
+  color: light-dark(#3E1F00, #E2E8F0);
   text-decoration: none;
 }
 
 .sobreInfo a:hover{
-  color: var(--textMar);
+  color: light-dark(#174e57, #E2E8F0);
+  transition: color 0.3s ease;
 }
 
 .fotoColuna {
@@ -96,7 +100,7 @@
 }
 
 .carrossel {
-  background-color: var(--bgMarB);
+  background-color: light-dark(#3b1f00, );
   border-radius: 20px;
   padding: 14px 28px;
   overflow: hidden;
@@ -116,7 +120,7 @@
 }
 
 .carrossel:hover {
-  background-color: var(--bgMar);
+  background-color: light-dark(#174e57,);
   transform: scale(1.01);
   transition: 0.2s ease;
 }
@@ -125,26 +129,14 @@
   to { transform: translateX(-832px); }
 }
 
-.projetos{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-height: 500px;
-  min-height: 400px;
-}
-
-.projetos h5{
-  font-size: 3rem;
-}
-
 .footer{
-  background-color: var(--bgMarB);
+  background-color: light-dark(#3b1f00, );
   margin-top: 60px;
   padding: 40px;
 }
 
 .retang{
-  background-color: var(--bg);
+  background-color: light-dark(beige, );
   border-radius: 20px;
   display: flex;
   justify-content: space-between;
@@ -164,15 +156,9 @@
 }
 
 .footerNome{
-  color: #174e57;
-  font-size: 1.5rem;
+  color: light-dark(#3E1F00, );
+  font-size: 1.1rem;
   font-weight: 700;
-  margin: 0;
-}
-
-.footerC{
-  color: var(--textMar);
-  font-size: 1.15rem;
   margin: 0;
 }
 
@@ -185,7 +171,7 @@
 
 .footerDir h3{
   font-size: 1.4rem;
-  color:#174e57;
+  color: light-dark(#3E1F00, );
   margin: 0;
 }
 
@@ -201,14 +187,14 @@
   justify-content: center;
   width: 48px;
   height: 48px;
-  background-color: var(--bgMar);
+  background-color: light-dark(#4f2b02, );
   border-radius: 14px;
   transition: background-color 0.2s ease, transform 0.2s ease;
   margin-top: 8px;
 }
 
 .minhasSociais:hover {
-  background-color: var(--bgAz);
+  background-color: light-dark(#174e57, );
   transform: scale(1.08);
   transition: 0.3s ease;
 }
@@ -219,17 +205,17 @@
 }
 
 ::-webkit-scrollbar{
-  background-color: var(--bgMarB);
+  background-color: light-dark(#3b1f00, );
   width: 12px;
 }
 
 ::-webkit-scrollbar-thumb{
-  background-color: var(--bg);
+  background-color: light-dark(beige, );
   border-radius: 12px;
 }
 
 ::-webkit-scrollbar-thumb:active{
-  background-color: var(--bgAz);
+  background-color: light-dark(#174e57, );
 }
 
 .lightDark {
@@ -251,4 +237,76 @@
 .lightDark img{
   width: 30px;
   height: 30px;
+}
+
+.projetos{
+  min-height: 600px;
+  padding: 80px 24px;
+}
+
+.projetos h5{
+  font-family: 'Annapurna SIL', serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.25rem;
+  margin-bottom: 60px;
+}
+
+.projetosLista{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 60px;
+  max-width: 1100px;
+  margin: 0 auto;
+
+}
+
+.projetosFotos{
+  flex-shrink: 0;
+  width: 420px;
+}
+
+.projetosFotos img{
+  padding: 0.25rem;
+  height: auto;
+  width: 100%;
+}
+
+.projetosInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;  
+}
+
+.projetosInfo h6{
+  font-family: 'Annapurna SIL', serif;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.projetosTags{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.projetosTags span{
+  background-color: light-dark(#4f2b02, #94A3B8);
+  color: light-dark(beige, black);
+  border-radius: 999px;
+  font-size: 0.95rem;
+  padding: 6px 14px;
+  letter-spacing: 0.02em;
+}
+
+.projetosTags a{
+  background-color: light-dark(#3e3020, #0e1723);
+  border-radius: 999px;
+  padding: 8px;
+  color: #668fc5;
+  text-decoration: none;
 }

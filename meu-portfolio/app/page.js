@@ -1,6 +1,6 @@
 import styles from "./page.module.css";
 import Barra from "./components/Barra"
-
+import Projetos from "./components/Projetos"
 export default function Home() {
   return (
     <>
@@ -55,16 +55,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="projetos" className={styles.projetos}>
-        <h5>Projetos</h5>
-
-      </section>
+      <Projetos />
 
       <footer id="contato" className={styles.footer}>
         <div className={styles.retang}>
           <div className={styles.footerEsq}>
-            <p className={styles.footerNome}>Bento Guilherme</p>
-            <p className={styles.footerC}>© 2026 por <b>bnnto</b></p>
+            <p className={styles.footerNome}>© 2026 Bento Guilherme</p>
           </div>
           <div className={styles.footerDir}>
             <h3 className={styles.footerContato}>Contato</h3>

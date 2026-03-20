@@ -1,14 +1,15 @@
 import styles from "./page.module.css";
+import Barra from "./components/Barra"
 
 export default function Home() {
   return (
     <>
-      <div className={styles.barra}>
-        <a href="#sobre">Sobre mim</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#contato">Contato</a>
-        <a href="/jogodaforca" rel="noopener noreferrer">Jogo da Forca</a>
-      </div>
+      <Barra />
+
+      <section className={styles.home}>
+        <h4>OI MEU NOME É BENTO</h4>
+
+      </section>
 
       <section id="sobre" className={styles.sobre}>
         <img src="/foto.jpeg" alt="Minha Foto" className={styles.imgFluid}></img>
@@ -55,7 +56,7 @@ export default function Home() {
       </section>
 
       <section id="projetos" className={styles.projetos}>
-        
+        <h5>Projetos</h5>
 
       </section>
 

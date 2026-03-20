@@ -4,5 +4,41 @@
 }
 
 body {
-  background-color: #f5f0e8;
+  background-color: var(--bg);
 }
+
+:root {
+  --bg: beige;
+  --text: darkslategrey;
+  --nav-bg: rgba(245, 240, 232, 0.8);
+}
+
+[data-theme="dark"] {
+  --bg: #0f1729;
+  --preto: white;
+  --bgAz: #E2E8F0;
+  --bgMarB: #1a1a2e;
+  --bgMar: #94A3B8;
+  --textBg: black;
+  --textAz: #E2E8F0;
+  --textMar: #94A3B8;
+  --textMarB: #3b1f00;
+}
+
+[data-theme="light"] {
+  --bg: beige;
+  --preto: black;
+  --bgAz: #174e57;
+  --bgMarB: #3b1f00;
+  --bgMar: #4f2b02;
+  --textBg: beige;
+  --textAz: #174e57;
+  --textMar: #4f2b02;
+  --textMarB: #3b1f00;
+}
+
+[data-theme="dark"] .sun  { display: none; }
+[data-theme="dark"] .moon { display: block; }
+  
+[data-theme="light"] .sun  { display: block; }
+[data-theme="light"] .moon { display: none; }

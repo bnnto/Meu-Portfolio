@@ -1,13 +1,14 @@
 .barra{
-  max-height: 500px;
+  max-height: 52px;
   min-height: 45px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
-  padding: 10px 24px;
-  backdrop-filter: blur(10px);
+  gap: 32px;
+  padding: 5px 24px;
   background-color: transparent;
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -15,14 +16,26 @@
 
 .barra a{
   text-decoration: none;
-  color: #4f2b02;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  font-weight: 500;
+  color: var(--preto);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 10px 12px;  
+  border-radius: 999px;
+  line-height: 1;
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 .barra a:hover{
-  color: #174e57;
-  transform: scale(1.03);
+  color: var(--textBg);
+  background-color: var(--bgMar);
+}
+
+.home{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 24px; 
 }
 
 .sobre{
@@ -32,13 +45,12 @@
   align-items: center;
   gap: 80px;
   padding: 80px 24px; 
-  color: #4f2b02;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: var(--textMar);
   text-align: justify;
 }
 
 .sobre h2{
-  color: #174e57;
+  color: var(--textAz);
 }
 
 .imgFluid {
@@ -63,11 +75,12 @@
 }
 
 .sobreInfo a{
-  color: #174e57;
+  color: var(--textAz);
+  text-decoration: none;
 }
 
 .sobreInfo a:hover{
-  color: #4f2b02;
+  color: var(--textMar);
 }
 
 .fotoColuna {
@@ -83,7 +96,7 @@
 }
 
 .carrossel {
-  background-color: #3b1f00;
+  background-color: var(--bgMarB);
   border-radius: 20px;
   padding: 14px 28px;
   overflow: hidden;
@@ -103,7 +116,7 @@
 }
 
 .carrossel:hover {
-  background-color: #174e57;
+  background-color: var(--bgMar);
   transform: scale(1.01);
   transition: 0.2s ease;
 }
@@ -112,14 +125,26 @@
   to { transform: translateX(-832px); }
 }
 
+.projetos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 500px;
+  min-height: 400px;
+}
+
+.projetos h5{
+  font-size: 3rem;
+}
+
 .footer{
-  background-color: #3b1f00;
+  background-color: var(--bgMarB);
   margin-top: 60px;
   padding: 40px;
 }
 
 .retang{
-  background-color: #f5f0e8;
+  background-color: var(--bg);
   border-radius: 20px;
   display: flex;
   justify-content: space-between;
@@ -146,7 +171,7 @@
 }
 
 .footerC{
-  color: #4f2b02;
+  color: var(--textMar);
   font-size: 1.15rem;
   margin: 0;
 }
@@ -176,14 +201,14 @@
   justify-content: center;
   width: 48px;
   height: 48px;
-  background-color: #4f2b02;
+  background-color: var(--bgMar);
   border-radius: 14px;
   transition: background-color 0.2s ease, transform 0.2s ease;
   margin-top: 8px;
 }
 
 .minhasSociais:hover {
-  background-color: #174e57;
+  background-color: var(--bgAz);
   transform: scale(1.08);
   transition: 0.3s ease;
 }
@@ -194,15 +219,36 @@
 }
 
 ::-webkit-scrollbar{
-  background-color: #3b1f00;
+  background-color: var(--bgMarB);
   width: 12px;
 }
 
 ::-webkit-scrollbar-thumb{
-  background-color: #f5f0e8;
+  background-color: var(--bg);
   border-radius: 12px;
 }
 
 ::-webkit-scrollbar-thumb:active{
-  background-color: #174e57;
+  background-color: var(--bgAz);
+}
+
+.lightDark {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+}
+
+.lightDark:hover {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.lightDark img{
+  width: 30px;
+  height: 30px;
 }

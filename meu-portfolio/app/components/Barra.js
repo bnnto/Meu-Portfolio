@@ -18,8 +18,8 @@ export default function Barra(){
             <Link href="/jogodaforca" rel="noopener noreferrer">Jogo da Forca</Link>
 
             <button onClick={toggleTheme} className={styles.lightDark}>
-                <img src="/moon.svg" className="lua"></img>
-                <img src="/sun.svg" className="sol"></img>
+                <img src="/moon.svg" className="lua" />
+                <img src="/sun.svg" className="sol" />
             </button>
         </div>  
         </>

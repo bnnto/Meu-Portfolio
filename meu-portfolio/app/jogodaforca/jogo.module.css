@@ -1,12 +1,85 @@
-.classname{
-    font-size: 5rem;
-    background-color: red;
-    color:yellow;
+@import url('https://fonts.googleapis.com/css2?family=Annapurna+SIL&display=swap');
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    padding: 24px;
 }
 
-.link{
-    font-size: 5rem;
-    background-color: aqua;
-    color:aliceblue;
-    text-decoration: overline;
+.container h1{
+    font-family: 'Annapurna SIL', serif;
+    font-size: 2.5rem;
+    color: light-dark(#3E1F00, #E2E8F0);
+}
+
+.categoria{
+    color: light-dark(#4f2b02, #94A3B8);
+    font-size: 1.19rem;
+}
+
+.imagem{
+    padding: 0.25rem;
+    max-width: 500px;
+    height: auto;
+    width: 100%;
+}
+.palavra{
+    font-size: 32px;
+    letter-spacing: 10px;
+    color: light-dark(#4f2b02, #94A3B8);
+    font-size: 3rem;
+}
+
+.teclado{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+    max-width: 400px; 
+}
+
+.tecla{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: light-dark(#4f2b02, #94A3B8);
+    color: light-dark(beige, black);
+    border: none;
+}
+
+.tecla:disabled {
+  cursor: default;
+}
+
+.acerto{
+    background-color: lightgreen;
+}
+
+.erro{
+    background-color: rgb(255, 25, 0);
+}
+
+.erradas{
+    color: light-dark(#4f2b02, #94A3B8);
+    font-size: 1.2rem;
+}
+
+.mensagem {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.btnReiniciar {
+  font-size: 16px;
+  padding: 8px 20px;
+  cursor: pointer;
 }

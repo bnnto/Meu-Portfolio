@@ -138,7 +138,7 @@ export default function Projetos(){
                     <h6>hackaton - extensão em ação</h6>
 
                     <p>
-                        Esperando momo me ajudar hiihihi
+                        aaaaaaaaaa
                     </p>
                 </div>
             </div>

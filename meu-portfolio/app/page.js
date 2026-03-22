@@ -1,6 +1,9 @@
 import styles from "./page.module.css";
 import Barra from "./components/Barra"
 import Projetos from "./components/Projetos"
+import Rodape from "./components/Rodape"
+import Jogodaforca from "./components/Jogodaforca"
+
 export default function Home() {
   return (
     <>
@@ -57,30 +60,9 @@ export default function Home() {
 
       <Projetos />
 
-      <footer id="contato" className={styles.footer}>
-        <div className={styles.retang}>
-          <div className={styles.footerEsq}>
-            <p className={styles.footerNome}>© 2026 Bento Guilherme</p>
-          </div>
-          <div className={styles.footerDir}>
-            <h3 className={styles.footerContato}>Contato</h3>
-            <div className={styles.divSociais}>
-              <a href="https://github.com/bnnto" target="_blank" rel="noopener noreferrer" className={styles.minhasSociais}>
-                <img src="/github.svg"/>
-              </a>
-              <a href="https://www.linkedin.com/in/bento-guilherme/" target="_blank" rel="noopener noreferrer" className={styles.minhasSociais}>
-                <img src="/linkedin.svg"/>
-              </a>
-              <a href="mailto:gbento555@gmail.com" target="_blank" rel="noopener noreferrer" className={styles.minhasSociais}>
-                <img src="/email.svg"/>
-              </a>
-              <a href="/Currículo-BentoGuilherme.pdf" target="_blank" rel="noopener noreferrer" className={styles.minhasSociais}>
-                <img src="/curriculo.svg"/>
-              </a>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Jogodaforca />
+
+      <Rodape />
     </> 
   );
 }

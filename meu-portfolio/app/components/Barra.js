@@ -1,5 +1,6 @@
 'use client'
 import styles from '../page.module.css'
+import Link from "next/link"
 
 export default function Barra(){
     function toggleTheme(){
@@ -10,15 +11,15 @@ export default function Barra(){
     return (
         <>
         <div className={styles.barra}>
-            <a href="#">Home</a>
-            <a href="#sobre">Sobre mim</a>
-            <a href="#projetos">Projetos</a>
-            <a href="#contato">Contato</a>
-            <a href="/jogodaforca" rel="noopener noreferrer">Jogo da Forca</a>
+            <Link href="#">Home</Link>
+            <Link href="#sobre">Sobre mim</Link>
+            <Link href="#projetos">Projetos</Link>
+            <Link href="#contato">Contato</Link>
+            <Link href="/jogodaforca" rel="noopener noreferrer">Jogo da Forca</Link>
 
             <button onClick={toggleTheme} className={styles.lightDark}>
-            <img src="/moon.svg" className="moon"></img>
-            <img src="/sun.svg" className="sun"></img>
+                <img src="/moon.svg" className="lua"></img>
+                <img src="/sun.svg" className="sol"></img>
             </button>
         </div>  
         </>

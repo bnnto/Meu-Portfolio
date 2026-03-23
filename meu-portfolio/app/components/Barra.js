@@ -1,13 +1,13 @@
 'use client'
-import styles from '../page.module.css'
-import Link from "next/link"
+import styles from '../page.module.css';
+import Link from "next/link";
+
+export function toggleTheme(){
+    const atual = document.documentElement.getAttribute('data-theme');
+    document.documentElement.setAttribute('data-theme', atual === 'dark' ? 'light' : 'dark');
+}
 
 export default function Barra(){
-    function toggleTheme(){
-        const atual = document.documentElement.getAttribute('data-theme');
-        document.documentElement.setAttribute('data-theme', atual === 'dark' ? 'light' : 'dark');
-    }
-
     return (
         <>
         <div className={styles.barra}>

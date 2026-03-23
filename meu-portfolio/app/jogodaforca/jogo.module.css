@@ -1,5 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Annapurna+SIL&display=swap');
 
+.containerCima{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+}
+
+.containerCima h1{
+    font-family: 'Annapurna SIL', serif;
+    font-size: 2.5rem;
+    color: light-dark(#3E1F00, #E2E8F0);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.containerCima a{
+    background-color: light-dark(#4f2b02, #94A3B8);
+    color: light-dark(beige, black);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.containerCima a:hover{
+    transform: scale(1.05);
+}
+
+.containerCimaDireita {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
 
 .container{
     display: flex;
@@ -10,28 +45,58 @@
     padding: 24px;
 }
 
-.container h1{
-    font-family: 'Annapurna SIL', serif;
-    font-size: 2.5rem;
-    color: light-dark(#3E1F00, #E2E8F0);
-}
-
 .categoria{
-    color: light-dark(#4f2b02, #94A3B8);
-    font-size: 1.19rem;
+    background-color: light-dark(rgba(79,43,2,0.1), rgba(148,163,184,0.1));
+    border: 1px solid light-dark(rgba(79,43,2,0.2), rgba(148,163,184,0.2));
+    color: light-dark(#3b1f00, );
+    padding: 4px 16px;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    margin-top: -20px;
 }
 
 .imagem{
-    padding: 0.25rem;
-    max-width: 500px;
+    max-width: 600px;
     height: auto;
     width: 100%;
+    filter: invert(0);
+    margin-right: 20px;
 }
+
+:global([data-theme="dark"]) .imagem {
+  filter: invert(1);
+}
+
 .palavra{
-    font-size: 32px;
-    letter-spacing: 10px;
+    font-size: 2.2rem;
     color: light-dark(#4f2b02, #94A3B8);
-    font-size: 3rem;
+    margin-top: -75px;
+}
+
+.letra{
+    letter-spacing: 5px;
+    min-width: 28px;
+    padding-bottom: 4px;
+}
+
+.venceu .letra {
+  animation: popIn 0.3s ease both;   
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%       { transform: translateX(-8px); }
+  40%       { transform: translateX(8px); }
+  60%       { transform: translateX(-6px); }
+  80%       { transform: translateX(6px); }
+}
+
+.shake {
+  animation: shake 0.5s ease;
+}
+
+.shakeRen{
+    animation: shake 1s ease infinite;
 }
 
 .teclado{
@@ -54,10 +119,16 @@
     background-color: light-dark(#4f2b02, #94A3B8);
     color: light-dark(beige, black);
     border: none;
+    transition: transform 0.15s ease, filter 0.15s ease;
 }
 
 .tecla:disabled {
-  cursor: default;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.tecla:active{
+    transform: scale(0.88);
 }
 
 .acerto{
@@ -76,10 +147,36 @@
 .mensagem {
   font-size: 22px;
   font-weight: bold;
+  color: light-dark(#3b1f00, #0e1723);
+  animation: popIn 0.4s ease;
+}
+
+.mensagemVitoria { color: #2d8a4e; }
+.mensagemDerrota { color: #c0392b; }
+
+.mensagemBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes popIn {
+  0%   { transform: scale(0.5); opacity: 0; }
+  80%  { transform: scale(1.2); }
+  100% { transform: scale(1);   opacity: 1; }
 }
 
 .btnReiniciar {
-  font-size: 16px;
-  padding: 8px 20px;
-  cursor: pointer;
+    font-size: 16px;
+    padding: 8px 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border-radius: 20px;
+    background-color: light-dark(#4f2b02, #94A3B8);
+    color: light-dark(beige, black);
+    border: none;
+}
+
+.btnReiniciar:hover{
+    transform: scale(1.05);
 }

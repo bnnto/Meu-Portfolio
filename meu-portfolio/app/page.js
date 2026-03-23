@@ -1,8 +1,8 @@
 import styles from "./page.module.css";
-import Barra from "./components/Barra"
-import Projetos from "./components/Projetos"
-import Rodape from "./components/Rodape"
-import Jogodaforca from "./components/Jogodaforca"
+import Barra from "./components/Barra";
+import Projetos from "./components/Projetos";
+import Rodape from "./components/Rodape";
+import Jogodaforca from "./components/Jogodaforca";
 
 export default function Home() {
   return (

@@ -94,11 +94,6 @@
   gap: 26px;
 }
 
-.skills {
-  display: flex;
-  margin-top: 60px;
-}
-
 .carrossel {
   background-color: light-dark(#3b1f00, );
   border-radius: 20px;
@@ -127,53 +122,6 @@
 
 @keyframes slide {
   to { transform: translateX(-832px); }
-}
-
-.footer{
-  background-color: light-dark(#3b1f00, );
-  margin-top: 60px;
-  padding: 40px;
-}
-
-.retang{
-  background-color: light-dark(beige, );
-  border-radius: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  padding: 40px 150px;
-  width: 100%;
-  box-sizing: border-box;
-  min-height: 200px;
-}
-
-.footerEsq{
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  margin: 0;
-}
-
-.footerNome{
-  color: light-dark(#3E1F00, );
-  font-size: 1.1rem;
-  font-weight: 700;
-  margin: 0;
-}
-
-.footerDir{
-  display: flex;
-  flex-direction: column;
-  align-items:flex-start;
-  gap: 8px;
-}
-
-.footerDir h3{
-  font-family: 'Annapurna SIL', serif;
-  font-size: 1.7rem;
-  color: light-dark(#3E1F00, );
-  margin: 0;
 }
 
 .divSociais{
@@ -244,6 +192,63 @@
   width: 30px;
   height: 30px;
   transition: transform 0.4s ease, opacity 0.3s ease;
+}
+
+.skillsContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 48px 24px;
+}
+
+.skillsContainer h1{
+  font-family: 'Annapurna SIL', serif;
+  font-size: 2.25rem;
+  margin-bottom: 40px;
+  color: light-dark(#3E1F00, #E2E8F0);
+  letter-spacing: 0.05rem;
+}
+
+.quadradinhos{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  max-width: 10020px;
+  cursor: pointer;
+  margin-top: 60px;
+}
+
+.quadradinho{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  gap: 8px;
+  background-color: light-dark(#3b1f00, );
+  padding: 16px;
+  width: 90px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.quadradinho:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.quadradinho img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.quadradinho p {
+  font-size: 0.9rem;
+  text-align: center;
+  color: light-dark(beige, #E2E8F0);
+  margin: 0;
 }
 
 .projetos{
@@ -438,4 +443,51 @@
 .jogoLink:hover{
   transform: scale(1.05);
   box-shadow: 0 0 30px rgba(79, 43, 2, 0.99);
+}
+
+.footer{
+  background-color: light-dark(#3b1f00, );
+  margin-top: 60px;
+  padding: 40px;
+}
+
+.retang{
+  background-color: light-dark(beige, );
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 40px 150px;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 200px;
+}
+
+.footerEsq{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 0;
+}
+
+.footerNome{
+  color: light-dark(#3E1F00, );
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.footerDir{
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  gap: 8px;
+}
+
+.footerDir h3{
+  font-family: 'Annapurna SIL', serif;
+  font-size: 1.7rem;
+  color: light-dark(#3E1F00, );
+  margin: 0;
 }

@@ -13,8 +13,8 @@ export default function Barra(){
         <div className={styles.barra}>
             <Link href="#">Home</Link>
             <Link href="#sobre">Sobre mim</Link>
+            <Link href="#habilidades">Habilidades</Link>
             <Link href="#projetos">Projetos</Link>
-            <Link href="#contato">Contato</Link>
             <Link href="/jogodaforca" rel="noopener noreferrer">Jogo da Forca</Link>
 
             <button onClick={toggleTheme} className={styles.lightDark}>

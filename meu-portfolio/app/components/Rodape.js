@@ -20,9 +20,6 @@ export default function Rodape(){
                     <a href="mailto:gbento555@gmail.com" target="_blank" rel="noopener noreferrer" className={styles.minhasSociais}>
                         <img src="/email.svg"/>
                     </a>
-                    <a href="/Currículo-BentoGuilherme.pdf" target="_blank" rel="noopener noreferrer" className={styles.minhasSociais}>
-                        <img src="/curriculo.svg"/>
-                    </a>
                     </div>
                 </div>
             </div>

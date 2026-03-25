@@ -23,7 +23,7 @@ export default function Skills(){
     return (
         <>
         <section id="habilidades">
-            <div className={styles.skillsContainer}>
+            <div className={`${styles.skillsContainer} fadeUp`}>
                 <h1>habilidades</h1> 
 
                 <div className={styles.quadradinhos}>

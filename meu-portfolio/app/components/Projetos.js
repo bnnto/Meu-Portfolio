@@ -3,10 +3,10 @@ import styles from '../page.module.css';
 export default function Projetos(){
     return (
         <>
-        <section id="projetos" className={styles.projetos}>
+        <section id="projetos" className={`${styles.projetos} fadeUp`}>
             <h5>projetos e experiências</h5>    
 
-            <div className={styles.projetosLista}>
+            <div className={`${styles.projetosLista} fadeUp`}>
                 <div className={styles.projetosFotos}>
                     <a href='https://github.com/bnnto/Patas-da-Rua' target="_blank" rel="noopener noreferrer">
                         <img src="patasdarua.png" />
@@ -37,7 +37,7 @@ export default function Projetos(){
                 </div>
             </div>
 
-            <div className={styles.projetosLista}>
+            <div className={`${styles.projetosLista} fadeUp`}>
                 <div className={`${styles.projetosFotos} ${styles.fotoMenor}`}>
                     <a href='https://github.com/bnnto/Meu-Portfolio' target="_blank" rel="noopener noreferrer">
                         <img src="portfolio.png" />
@@ -52,7 +52,7 @@ export default function Projetos(){
                     </p>
                     
                     <div className={styles.projetosTags}>
-                        <span>React</span>
+                        <span>React.js</span>
                         <span>Node.js</span>
                         <span>Next.js</span>
                         <span>HTML</span>
@@ -69,7 +69,7 @@ export default function Projetos(){
                 </div>
             </div>
 
-            <div className={styles.projetosLista}>
+            <div className={`${styles.projetosLista} fadeUp`}>
                 <div className={`${styles.projetosFotos} ${styles.fotoGrande}`}>
                     <a href='https://github.com/joao0cb/Projeto-Coliceu' target="_blank" rel="noopener noreferrer">
                         <img src="coliceu.jpeg"/>
@@ -99,7 +99,7 @@ export default function Projetos(){
                 </div>
             </div>
 
-            <div className={styles.projetosLista}>
+            <div className={`${styles.projetosLista} fadeUp`}>
                 <div className={styles.projetosFotos}>
                     <a href='https://github.com/LucasMN0/Labirinto' 
                     target="_blank" 
@@ -129,17 +129,23 @@ export default function Projetos(){
                 </div>
             </div>
 
-            <div className={styles.projetosLista}>
+            <div className={`${styles.projetosLista} fadeUp`}>
                 <div className={styles.projetosFotos}>
                     <img src="hackaton.jpeg"/>
                 </div>
 
                 <div className={styles.projetosInfo}>
-                    <h6>hackaton - extensão em ação</h6>
+                    <h6>hackathon - extensão em ação</h6>
 
                     <p>
-                        aaaaaaaaaa
+                        O Hackathon em questão teve foco na comunidade de Santo Amaro, na qual necessitava de projetos que não fossem a curto prazo.
+                        Portanto, eu e meu grupo pensamos, conversamos e criamos um projeto, que ainda está sendo desenvolvido, chamado "Mulheres do Amanhã".
+                        Temos a ideia de dar uma visão de futuro para cada mulher da comunidade, sendo no âmbito pessoal e profissional. 
                     </p>
+
+                    <div className={styles.projetosTags}>
+                        <span>Em desenvolvimento</span>
+                    </div>
                 </div>
             </div>
         </section>

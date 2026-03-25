@@ -17,8 +17,8 @@
 }
 
 .containerCima a{
-    background-color: light-dark(#4f2b02, #94A3B8);
-    color: light-dark(beige, black);
+    background-color: light-dark(#4f2b02, #1a2540);
+    color: light-dark(beige, #E2E8F0);
     padding: 6px 14px;
     border-radius: 20px;
     font-size: 1rem;
@@ -48,7 +48,7 @@
 .categoria{
     background-color: light-dark(rgba(79,43,2,0.1), rgba(148,163,184,0.1));
     border: 1px solid light-dark(rgba(79,43,2,0.2), rgba(148,163,184,0.2));
-    color: light-dark(#3b1f00, );
+    color: light-dark(#3b1f00, #E2E8F0);
     padding: 4px 16px;
     border-radius: 999px;
     font-size: 0.9rem;
@@ -103,7 +103,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 6px;
+    gap: 7px;
     max-width: 400px; 
 }
 
@@ -116,10 +116,10 @@
     font-size: 14px;
     cursor: pointer;
     border-radius: 10px;
-    background-color: light-dark(#4f2b02, #94A3B8);
-    color: light-dark(beige, black);
+    background-color: light-dark(#4f2b02, #1a2540);
+    color: light-dark(beige, #E2E8F0);
     border: none;
-    transition: transform 0.15s ease, filter 0.15s ease;
+    transition: transform 0.15s ease;
 }
 
 .tecla:disabled {
@@ -132,22 +132,26 @@
 }
 
 .acerto{
-    background-color: lightgreen;
+    background-color: #2d8a4e;
 }
 
 .erro{
-    background-color: rgb(255, 25, 0);
+    background-color: #dc2626;
 }
 
 .erradas{
-    color: light-dark(#4f2b02, #94A3B8);
+    color: light-dark(#3E1F00, #94A3B8);
     font-size: 1.2rem;
+}
+
+.erradasL{
+    color: #dc2626;
+    font-weight: bold;
 }
 
 .mensagem {
   font-size: 22px;
   font-weight: bold;
-  color: light-dark(#3b1f00, #0e1723);
   animation: popIn 0.4s ease;
 }
 
@@ -172,8 +176,8 @@
     cursor: pointer;
     transition: 0.3s ease;
     border-radius: 20px;
-    background-color: light-dark(#4f2b02, #94A3B8);
-    color: light-dark(beige, black);
+    background-color: light-dark(#4f2b02, #1a2540);
+    color: light-dark(beige, #E2E8F0);
     border: none;
 }
 

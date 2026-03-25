@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Jogodaforca(){
     return (
         <>
-        <section id="jogodaforca" className={styles.jogodaforca}>
+        <section id="jogodaforca" className={`${styles.jogodaforca} fadeUp`}>
         
         <h1>jogo da forca</h1>
 

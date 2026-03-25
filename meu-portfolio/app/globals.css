@@ -15,3 +15,22 @@ body { background-color: light-dark(#f5f5dc, #0f1729); }
 
 [data-theme="dark"] .lua { display: none; }
 [data-theme="dark"] .sol { display: block; }
+
+section {
+  border-top: 0.5px solid light-dark(rgba(79, 43, 2, 0.15), rgba(148, 163, 184, 0.15));
+}
+
+section:first-of-type {
+  border-top: none;
+}
+
+.fadeUp {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fadeUp.visivel {
+  opacity: 1;
+  transform: translateY(0);
+}

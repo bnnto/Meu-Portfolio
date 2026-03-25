@@ -149,7 +149,7 @@ export default function Home() {
         ))}
       </p>
 
-      <p className={styles.erradas}>Erros: ({erros}/{ERROS_MAX}): <span>{erradas.join(", ")}</span></p>
+      <p className={styles.erradas}>Erros: ({erros}/{ERROS_MAX}): <span className={styles.erradasL}>{erradas.join(", ")}</span></p>
 
       <Teclado
         letrasTentadas={letrasTentadas}
@@ -159,7 +159,7 @@ export default function Home() {
       />
 
       <div className={styles.mensagemBox}>
-        {venceu && <p className={`${styles.mensagem} ${styles.mensagemVitoria}`}>Você ganhou!</p>}
+        {venceu && <p className={`${styles.mensagem} ${styles.mensagemVitoria}`}>Você ganhou!!!</p>}
         {perdeu && <p className={`${styles.mensagem} ${styles.mensagemDerrota}`}>Você perdeu! A palavra era: <strong>{palavraSecreta}</strong></p>}
       </div> 
     </div>

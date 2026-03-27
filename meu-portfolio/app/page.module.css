@@ -163,7 +163,7 @@
   display: flex;
   align-items: center;
   justify-content: center; 
-  transition: background 0.3s ease, transform 0.2s ease;
+  transition: transform 0.2s ease;
 }
 
 .lightDark:hover {
@@ -292,7 +292,7 @@
 }
 
 .fotoMenor{
-  width: 410px;
+  max-width: 404px;
 }
 
 .projetosInfo{
@@ -541,4 +541,133 @@
 ::selection {
   background-color: light-dark(#4f2b02, #2d4a7a);
   color: light-dark(#FDF6E3, #E2E8F0);
+}
+
+@media (max-width: 480px) {
+
+  .barra {
+    gap: 8px;
+    padding: 5px 10px;
+    flex-wrap: wrap;
+    max-height: none;
+    justify-content: center;
+  }
+
+  .barra a {
+    font-size: 0.75rem;
+    padding: 5px 7px;
+  }
+
+  .home {
+    flex-direction: column;
+    gap: 40px;
+    padding: 60px 24px;
+  }
+
+  .homeTexto {
+    align-items: center;
+    text-align: center;
+  }
+
+  .homeNome {
+    font-size: 2.5rem;
+  }
+
+  .homeFotoImg {
+    width: 240px;
+    height: 280px;
+  }
+
+  .btnCurriculo {
+    align-self: center;
+  }
+
+  .sobre {
+    flex-direction: column;
+    padding: 60px 24px;
+    gap: 24px;
+  }
+
+  .sobreInfo {
+    font-size: 0.95rem;
+  }
+
+  .quadradinhos {
+    gap: 10px;
+  }
+
+  .quadradinho {
+    width: 75px;
+    padding: 12px;
+  }
+
+  .projetos {
+    padding: 60px 16px;
+  }
+
+  .projetosLista {
+    flex-direction: column;
+    gap: 24px;
+    padding: 40px 0;
+  }
+
+  .projetosFotos {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .fotoMenor {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .projetosTags {
+    gap: 8px;
+    justify-content: center;
+  }
+  
+   .projetos h5 {
+    text-align: center;
+  }
+
+  .projetosInfo {
+    align-items: center;
+    text-align: center;
+  }
+
+  .projetosTags a {
+    margin-left: 0;
+    margin-top: 4px;
+  }
+
+  .jogodaforca {
+    gap: 32px;
+    margin-top: 16px;
+    padding: 40px 24px;
+  }
+
+  .jogodaforca h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .jogodaforca p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .jogoLink {
+    font-size: 1rem;
+  }
+
+  .retang {
+    flex-direction: column;
+    padding: 32px 24px;
+    gap: 32px;
+    align-items: flex-start;
+  }
+
+  .footerDir {
+    align-items: flex-start;
+  }
 }

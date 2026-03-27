@@ -16,9 +16,9 @@ export default function Projetos(){
                 <div className={styles.projetosInfo}>
                     <h6>patas da rua</h6>
 
-                    <p>Patas da Rua é um site focado à proteger e melhorar a qualidade de vida de animais de rua, oferecendo uma 
-                    solução tecnológica usando coleiras rastreadoras que permitem monitorar esses animais em tempo real. 
-                    O rastreamento permite que a ONG acompanhe o animal e organize apadrinhamentos e adoções.
+                    <p>Patas da Rua é um site focado à <b>proteger e melhorar a qualidade de vida</b> de animais de rua, oferecendo uma 
+                    solução tecnológica usando <b>coleiras rastreadoras</b> que permitem monitorar esses animais em <b>tempo real</b>. 
+                    O rastreamento permite que a <b>ONG</b> acompanhe o animal e organize <b>apadrinhamentos e adoções</b>.
                     </p>
                     
                     <div className={styles.projetosTags}>
@@ -40,7 +40,7 @@ export default function Projetos(){
             <div className={`${styles.projetosLista} fadeUp`}>
                 <div className={`${styles.projetosFotos} ${styles.fotoMenor}`}>
                     <a href='https://github.com/bnnto/Meu-Portfolio' target="_blank" rel="noopener noreferrer">
-                        <img src="portfolio.png" />
+                        <img src="/portdark.png" />
                     </a>
                 </div>
 
@@ -48,7 +48,7 @@ export default function Projetos(){
                     <h6>portfólio pessoal</h6>
 
                     <p>Portfólio pessoal criado para reunir minhas informações, projetos, contato e jogo da forca, ao mesmo tempo em que serve como um 
-                        aprimoramento para minhas habilidades em desenvolvimento front-end com React e CSS.
+                        <b>aprimoramento</b> para minhas habilidades em desenvolvimento front-end com <b>React</b> e <b>CSS</b>.
                     </p>
                     
                     <div className={styles.projetosTags}>
@@ -79,9 +79,9 @@ export default function Projetos(){
                 <div className={styles.projetosInfo}>
                     <h6>coliceu</h6>
 
-                    <p>O Coliceu é um aplicativo de mapeamento arqueológico feito em Kotlin e Java que permite que o arqueólogo possa mapear sítios arqueológicos
-                        diretamente a partir de imagens adicionar pontos-zero, registrar artefatos descobertos e organizar seus detalhes de 
-                        forma clara e acessível.
+                    <p>O <b>Coliceu</b> é um aplicativo de mapeamento arqueológico feito em <b>Kotlin</b> e <b>Java</b> que permite que o arqueólogo possa mapear <b>sítios arqueológicos</b>
+                        diretamente a partir de imagens adicionar <b>pontos-zero</b>, registrar artefatos descobertos e organizar seus detalhes de 
+                        forma <b>clara</b> e <b>acessível</b>.
                     </p>
                     
                     <div className={styles.projetosTags}>
@@ -111,9 +111,9 @@ export default function Projetos(){
                 <div className={styles.projetosInfo}>
                     <h6>labirinto</h6>
 
-                    <p>Labirinto é um jogo feito 100% em Java para jogar no terminal, onde você anda pelo labirinto e pode encontrar inimigos
-                        e armadilhas pelo caminho, além de tesouros o jogo tem classes, nível de dificuldade, saves, loja de itens, consumíveis
-                        e muito mais!
+                    <p><b>Labirinto</b> é um jogo feito 100% em Java para jogar no <b>terminal</b>, onde você anda pelo labirinto e pode encontrar <b>inimigos</b>
+                        e <b>armadilhas</b> pelo caminho, além de <b>tesouros</b> o jogo tem classes, nível de dificuldade, saves, loja de itens, consumíveis
+                        e muito <b>mais</b>!
                     </p>
                     
                     <div className={styles.projetosTags}>
@@ -138,9 +138,9 @@ export default function Projetos(){
                     <h6>hackathon - extensão em ação</h6>
 
                     <p>
-                        O Hackathon em questão teve foco na comunidade de Santo Amaro, na qual necessitava de projetos que não fossem a curto prazo.
-                        Portanto, eu e meu grupo pensamos, conversamos e criamos um projeto, que ainda está sendo desenvolvido, chamado "Mulheres do Amanhã".
-                        Temos a ideia de dar uma visão de futuro para cada mulher da comunidade, sendo no âmbito pessoal e profissional. 
+                        O <b>Hackathon</b> em questão teve foco na comunidade de <b>Santo Amaro</b>, na qual necessitava de projetos que não fossem a curto prazo.
+                        Portanto, eu e meu grupo pensamos, conversamos e criamos um projeto, que ainda está sendo desenvolvido, chamado <b>"Mulheres do Amanhã"</b>.
+                        Temos a ideia de dar uma visão de futuro para cada <b>mulher</b> da comunidade, sendo no <b>âmbito pessoal e profissional</b>. 
                     </p>
 
                     <div className={styles.projetosTags}>

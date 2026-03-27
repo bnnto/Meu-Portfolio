@@ -121,21 +121,25 @@ export default function Home() {
   return (
     <>
     <div className={styles.containerCima}>
-      <Link href="/">Voltar para Portfólio</Link>
       <h1>jogo da forca</h1>
-    
-      <div className={styles.containerCimaDireita}>
-        <button 
-        className={`${styles.btnReiniciar} ${jogoAcabou ? styles.shakeRen : ''}`}
-        onClick={iniciarJogo}>
-          Reiniciar
-        </button>
-        <button onClick={toggleTheme} className={page.lightDark}>
-          <img src="/moon.svg" className="lua" />
-          <img src="/sun.svg" className="sol" />
-        </button>
+
+      <div className={styles.containerCimaBaixo}>
+        <Link href="/">Voltar para Portfólio</Link>
+
+        <div className={styles.containerCimaDireita}>
+          <button 
+            className={`${styles.btnReiniciar} ${jogoAcabou ? styles.shakeRen : ''}`}
+            onClick={iniciarJogo}>
+            Reiniciar
+          </button>
+          <button onClick={toggleTheme} className={page.lightDark}>
+            <img src="/moon.svg" className="lua" />
+            <img src="/sun.svg" className="sol" />
+          </button>
+        </div>
       </div>
     </div>
+    
     <div className={styles.container}>
       <p className={styles.categoria}>Categoria: Progamação</p>
 

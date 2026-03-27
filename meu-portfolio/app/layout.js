@@ -12,8 +12,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Portfólio - Bento",
-  description: "Feito por Bento.",
+  title: "Bento Guilherme",
+  description: "Estudante de Ciência da Computação na Unicap. Back End e Front End.",
+  openGraph: {
+    title: "Bento Guilherme",
+    description: "Estudante de Ciência da Computação na Unicap. Back End e Front End.",
+    url: "https://bento-portfolio-umber-five.vercel.app/",
+    siteName: "Bento Guilherme",
+  },
 };
 
 export default function RootLayout({ children }) {

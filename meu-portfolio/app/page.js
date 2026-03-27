@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Barra from "./components/Barra";
 import Comeco from "./components/Comeco";

@@ -47,8 +47,8 @@ export default function Projetos(){
                 <div className={styles.projetosInfo}>
                     <h6>portfólio pessoal</h6>
 
-                    <p>Portfólio pessoal criado para reunir minhas informações, projetos, contato e jogo da forca, ao mesmo tempo em que serve como um 
-                        <b>aprimoramento</b> para minhas habilidades em desenvolvimento front-end com <b>React</b> e <b>CSS</b>.
+                    <p>Portfólio pessoal criado para reunir minhas informações, projetos, contato e jogo da forca, ao mesmo tempo em que serve como um <b>aprimoramento</b> para 
+                        minhas habilidades em desenvolvimento front-end com <b>React</b> e <b>CSS</b>.
                     </p>
                     
                     <div className={styles.projetosTags}>
@@ -79,8 +79,8 @@ export default function Projetos(){
                 <div className={styles.projetosInfo}>
                     <h6>coliceu</h6>
 
-                    <p>O <b>Coliceu</b> é um aplicativo de mapeamento arqueológico feito em <b>Kotlin</b> e <b>Java</b> que permite que o arqueólogo possa mapear <b>sítios arqueológicos</b>
-                        diretamente a partir de imagens adicionar <b>pontos-zero</b>, registrar artefatos descobertos e organizar seus detalhes de 
+                    <p>O <b>Coliceu</b> é um aplicativo de mapeamento arqueológico feito em <b>Kotlin</b> e <b>Java</b> que permite que o arqueólogo possa mapear <b>sítios arqueológicos</b> diretamente 
+                        a partir de imagens adicionar <b>pontos-zero</b>, registrar artefatos descobertos e organizar seus detalhes de 
                         forma <b>clara</b> e <b>acessível</b>.
                     </p>
                     
@@ -111,9 +111,9 @@ export default function Projetos(){
                 <div className={styles.projetosInfo}>
                     <h6>labirinto</h6>
 
-                    <p><b>Labirinto</b> é um jogo feito 100% em Java para jogar no <b>terminal</b>, onde você anda pelo labirinto e pode encontrar <b>inimigos</b>
-                        e <b>armadilhas</b> pelo caminho, além de <b>tesouros</b> o jogo tem classes, nível de dificuldade, saves, loja de itens, consumíveis
-                        e muito <b>mais</b>!
+                    <p><b>Labirinto</b> é um jogo feito 100% em Java para jogar no <b>terminal</b>, onde você anda pelo labirinto e pode encontrar <b>inimigos</b> e <b>armadilhas</b> pelo 
+                        caminho, além de <b>tesouros</b> o jogo tem classes, nível de dificuldade, saves, loja de itens, consumíveis
+                        e muito <b>mais!</b>
                     </p>
                     
                     <div className={styles.projetosTags}>

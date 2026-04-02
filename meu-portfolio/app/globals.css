@@ -1,6 +1,7 @@
 *{  
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 body { background-color: light-dark(#f5f5dc, #0f1729); }

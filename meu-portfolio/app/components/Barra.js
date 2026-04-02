@@ -11,11 +11,11 @@ export default function Barra(){
     return (
         <>
         <div className={styles.barra}>
-            <Link href="#">Home</Link>
-            <Link href="#sobre">Sobre mim</Link>
-            <Link href="#habilidades">Habilidades</Link>
-            <Link href="#projetos">Projetos</Link>
-            <Link href="/jogodaforca" rel="noopener noreferrer">Jogo da Forca</Link>
+            <a href="#">Home</a>
+            <a href="#sobre">Sobre mim</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#projetos">Projetos</a>
+            <a href="/jogodaforca" rel="noopener noreferrer">Jogo da Forca</a>
 
             <button onClick={toggleTheme} className={styles.lightDark}>
                 <img src="/moon.svg" className="lua" />

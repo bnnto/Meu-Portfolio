@@ -149,7 +149,7 @@ export default function Projetos(){
                 </div>
             </div>
         </section>
-        <a href="https://github.com/bnnto" className={styles.maisProj}>
+        <a href="https://github.com/bnnto" target="_blank" rel="noopener noreferrer" className={styles.maisProj}>
             <span className={styles.texto}>veja mais projetos aqui</span>
             <img src="github.svg" className={styles.img} />
         </a>

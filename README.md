@@ -7,6 +7,6 @@
 
 ### Portfólio pessoal desenvolvido para apresentar projetos, habilidades e informações de contato.
 
-### **[Ver site](https://bento-portfolio-umber-five.vercel.app/)**
+### **[Ver site](https://bentog-portfolio.vercel.app/)**
 
 ---

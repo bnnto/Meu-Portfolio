@@ -1,4 +1,4 @@
-import { Platform } from 'react-native';
+import { Platform, Appearance } from 'react-native';
 
 const tintColorLight = '#0a7ea4';
 const tintColorDark = '#fff';
@@ -6,9 +6,14 @@ const tintColorDark = '#fff';
 const botaoDark = '#1a2540';
 const botaoLight = '#4f2b02';
 
+export function toggleTheme(current: 'light' | 'dark'){
+  Appearance.setColorScheme(current === 'light' ? 'dark' : 'light');
+}
+
 export const Colors = {
   light: {
-    text: '#11181C',
+    text: '#4f2b02',
+    textDois: '#3E1F00',
     background: '#f5f5dc',
     tint: tintColorLight,
     icon: '#687076',
@@ -17,7 +22,8 @@ export const Colors = {
     botao: botaoLight,
   },
   dark: {
-    text: '#E2E8F0',
+    text: '#94A3B8',
+    textDois: '#E2E8F0',
     background: '#0f1729',
     tint: tintColorDark,
     icon: '#9BA1A6',

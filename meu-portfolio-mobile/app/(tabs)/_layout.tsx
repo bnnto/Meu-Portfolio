@@ -5,6 +5,7 @@ import { Colors } from '@/constants/theme';
 import { useColorScheme } from '@/hooks/use-color-scheme';
 import { Ionicons } from '@expo/vector-icons';
 import { useFonts, Poppins_400Regular, Poppins_600SemiBold, Poppins_700Bold } from '@expo-google-fonts/poppins';
+import { Appearance, TouchableOpacity } from 'react-native';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -26,13 +27,40 @@ export default function TabLayout(){
   if (!fontsLoaded) return null;
 
   return(
-    <Tabs screenOptions={{tabBarActiveTintColor: Colors[theme].tint, headerShown: true,}}>
+    <Tabs screenOptions={{
+      tabBarActiveTintColor: Colors[theme].textDois,
+      tabBarInactiveTintColor: Colors[theme].text,
+      tabBarStyle:{
+        backgroundColor: Colors[theme].background,
+        marginBottom: 10,
+        borderTopWidth: 0,
+        elevation: 0,
+      },
+      headerShown: true,
+      headerShadowVisible: false,
+      headerStyle: {
+        backgroundColor: Colors[theme].background,
+      },
+      headerTintColor : Colors[theme].textDois,
+      headerRight: () => (
+        <TouchableOpacity
+          onPress={() => Appearance.setColorScheme(theme === 'light' ? 'dark' : 'light')}
+          style={{ marginRight: 16 }}
+        >
+          <Ionicons
+            name={theme === 'light' ? 'moon-outline' : 'sunny-outline'}
+            size={24}
+            color={Colors[theme].textDois}
+          />
+        </TouchableOpacity>
+      ),
+      }}>
       <Tabs.Screen 
         name="index" 
         options={{
           title: 'Home', 
           tabBarIcon: ({ color, focused}) => (
-            <Ionicons name={focused ? 'home' : 'home-outline'} size={24} color={color} />
+            <Ionicons name={focused ? 'home' : 'home-outline'} size={focused ? 28 : 24} color={color} />
           ),
         }}
       />
@@ -41,7 +69,7 @@ export default function TabLayout(){
         options={
           {title: 'Sobre mim', 
           tabBarIcon: ({ color, focused}) => (
-           <Ionicons name={focused ? 'person' : 'person-outline'} size={24} color={color} />
+           <Ionicons name={focused ? 'person' : 'person-outline'} size={focused ? 28 : 24} color={color} />
           ),
         }}
       />
@@ -50,16 +78,16 @@ export default function TabLayout(){
         options={
           {title: 'Projetos', 
           tabBarIcon: ({ color, focused}) => (
-            <Ionicons name={focused ? 'code-slash' : 'code-slash-outline'} size={24} color={color} />
+            <Ionicons name={focused ? 'code-slash' : 'code-slash-outline'} size={focused ? 28 : 24} color={color} />
           ),
         }}
       />
       <Tabs.Screen 
         name="jogo" 
         options={
-          {title: 'Jogo da forca', 
+          {title: 'Jogo da Forca', 
           tabBarIcon: ({ color, focused}) => (
-            <Ionicons name={focused ? 'game-controller' : 'game-controller-outline'} size={24} color={color} />
+            <Ionicons name={focused ? 'game-controller' : 'game-controller-outline'} size={focused ? 28 : 24} color={color} />
           ),
         }}
       />

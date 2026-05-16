@@ -1,4 +1,4 @@
-import { StyleSheet, Linking, Image, ScrollView } from 'react-native';
+import { StyleSheet, Linking, ScrollView } from 'react-native';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { MeuModal } from '@/components/modal';
@@ -48,6 +48,18 @@ export default function Sobre(){
     { name: "CSS", Icone: CssIcon },
   ];
 
+  const tecnologiasApp = [
+    { name: "React Native" },
+    { name: "TypeScript" },
+    { name: "Expo Router"},
+    { name: "React Native SVG" },
+    { name: "Expo Google Fonts" },
+    { name: "React Native Modal" },
+    { name: "Expo Sharing" },
+    { name: "Expo Asset" },
+    { name: "Expo Splash Screen" },
+  ];
+
   return(
     <ScrollView style={{ backgroundColor: Colors[theme].background }} contentContainerStyle={styles.container}>
       <ThemedView style={[styles.topoContainer, { height: height - 300 }]}>
@@ -92,6 +104,22 @@ export default function Sobre(){
           ))}
         </ThemedView>
       </ThemedView>
+      
+      <ThemedText type="title" style={[styles.titulo, { color: Colors[theme].textDois, marginTop: 16, textAlign: 'center', fontSize: 25 }]}>
+        tecnologias / módulos do app
+      </ThemedText>
+      <ThemedView style={styles.grade}>
+        {tecnologiasApp.map((hab, index) => (
+          <ThemedView 
+            key={index} 
+            style={[styles.tagTec, { backgroundColor: Colors[theme].botao }]}
+          >
+            <ThemedText style={[styles.quadradinhoNome, { color: Colors[theme].textoQuadrado }]}>
+              {hab.name}
+            </ThemedText>
+          </ThemedView>
+        ))}
+      </ThemedView>
 
       <MeuModal 
         visivel={modalVisivel} 
@@ -122,6 +150,7 @@ const styles =  StyleSheet.create({
     borderRadius: 16,
     padding: 16,
     alignItems: 'center',
+    backgroundColor: 'transparent',
   },
   quadradinho: {
     width: 90,
@@ -168,4 +197,11 @@ const styles =  StyleSheet.create({
     gap: 16,
     backgroundColor: 'transparent',
   },
+  tagTec: {
+    paddingHorizontal: 14,
+    paddingVertical: 8,
+    borderRadius: 999,
+    alignItems: 'center',
+    justifyContent: 'center',
+  }
 });

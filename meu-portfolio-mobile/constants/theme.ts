@@ -9,6 +9,15 @@ const botaoLight = '#4f2b02';
 const textoDark = '#e2e8f0';
 const textoLight = 'beige';
 
+const tagProjetoLight = '#4f2b02';
+const tagProjetoDark = '#1a2540';
+
+const tagTextoLight = '#fdf6e3';
+const tagTextoDark = '#e2e8f0';
+
+const iconeTagLight = '#2F3E2B'; 
+const iconeTagDark = '#28478e';
+
 export function toggleTheme(current: 'light' | 'dark'){
   Appearance.setColorScheme(current === 'light' ? 'dark' : 'light');
 }
@@ -24,6 +33,9 @@ export const Colors = {
     tabIconSelected: tintColorLight,
     botao: botaoLight,
     textoQuadrado: textoLight,
+    tagProjeto: tagProjetoLight,
+    tagTexto: tagTextoLight,
+    iconeTag: iconeTagLight,
   },
   dark: {
     text: '#94A3B8',
@@ -36,6 +48,9 @@ export const Colors = {
     tabIconSelected: tintColorDark,
     botao: botaoDark,
     textoQuadrado: textoDark,
+    tagProjeto: tagProjetoDark,
+    tagTexto: tagTextoDark,
+    iconeTag: iconeTagDark,
   },
 };
 

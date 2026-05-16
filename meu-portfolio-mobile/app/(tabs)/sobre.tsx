@@ -22,6 +22,7 @@ import CssIcon from '../../assets/images/css.svg';
 import KotlinIcon from '../../assets/images/kotlin.svg';
 import DjangoIcon from '../../assets/images/django.svg';
 import { Dimensions } from 'react-native';
+import { N } from '@/components/negrito';
 
 const { height } = Dimensions.get('window');
 
@@ -53,7 +54,7 @@ export default function Sobre(){
         <ThemedText type="title" style={[styles.titulo, { color: Colors[theme].textDois }]}>sobre mim</ThemedText>
         <ThemedText style={{ textAlign: 'center'}}>
           Sou estudante de 
-          <ThemedText style={[styles.textoForte, { color: Colors[theme].textDois, textAlign: 'center' }]}> Ciência da Computação </ThemedText> 
+          <N> Ciência da Computação </N> 
           na{" "}
           <ThemedText 
             onPress={() => setModalVisivel(true)}
@@ -62,9 +63,9 @@ export default function Sobre(){
           Universidade Católica de Pernambuco
           </ThemedText>
           {" "} e atualmente estou no 5° período. Durante o curso aprendi diversas tecnologias, mas meu interesse maior foi em 
-          <ThemedText style={[styles.textoForte, { color: Colors[theme].textDois }]}> back e front end, </ThemedText> 
+          <N> back e front end, </N> 
           e é com elas que pretendo fazer diferença na minha 
-          <ThemedText style={[styles.textoForte, { color: Colors[theme].textDois }]}> carreira</ThemedText>.
+          <N> carreira</N>.
         </ThemedText>
 
         <ThemedText style={{ textAlign: 'center'}}>

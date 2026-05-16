@@ -6,6 +6,9 @@ const tintColorDark = '#fff';
 const botaoDark = '#1a2540';
 const botaoLight = '#4f2b02';
 
+const textoDark = '#e2e8f0';
+const textoLight = 'beige';
+
 export function toggleTheme(current: 'light' | 'dark'){
   Appearance.setColorScheme(current === 'light' ? 'dark' : 'light');
 }
@@ -20,6 +23,7 @@ export const Colors = {
     tabIconDefault: '#687076',
     tabIconSelected: tintColorLight,
     botao: botaoLight,
+    textoQuadrado: textoLight,
   },
   dark: {
     text: '#94A3B8',
@@ -31,6 +35,7 @@ export const Colors = {
     tabIconDefault: '#9BA1A6',
     tabIconSelected: tintColorDark,
     botao: botaoDark,
+    textoQuadrado: textoDark,
   },
 };
 

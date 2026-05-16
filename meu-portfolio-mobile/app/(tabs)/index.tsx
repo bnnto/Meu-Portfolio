@@ -1,4 +1,4 @@
-import { StyleSheet, TouchableOpacity, Linking, Image, Text, Animated, Alert } from 'react-native';
+import { StyleSheet, TouchableOpacity, Image, Text, Animated, Linking } from 'react-native';
 import { useEffect, useState, useRef } from 'react';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
@@ -82,7 +82,16 @@ export default function Home(){
                 style={styles.homeFotoImg}
             />
           </TouchableOpacity>
-          <MeuModal visivel={modalVisivel} onFechar={() => setModalVisivel(false)} />
+          <MeuModal 
+            visivel={modalVisivel} 
+            onFechar={() => setModalVisivel(false)}
+            titulo="Abrir o Github"
+            descricao="Deseja abrir o GitHub no navegador?"
+            botoes={[
+              { texto: 'Cancelar', onPress: () => {} },
+              { texto: 'Abrir', onPress: () => Linking.openURL('https://github.com/bnnto'), cor: '#065F46' },
+            ]}
+          />
       </ThemedView>
   );
 }

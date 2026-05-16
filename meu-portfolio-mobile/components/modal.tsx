@@ -1,16 +1,25 @@
-import { TouchableOpacity, Linking, StyleSheet } from 'react-native';
+import { TouchableOpacity, StyleSheet } from 'react-native';
 import Modal from 'react-native-modal';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { Colors } from '@/constants/theme';
 import { useColorScheme } from '@/hooks/use-color-scheme';
 
+type Botao = {
+  texto: string;
+  onPress: () => void;
+  cor?: string;
+}
+
 type Props = {
   visivel: boolean;
   onFechar: () => void;
+  titulo: string;
+  descricao: string;
+  botoes: Botao[];
 }
 
-export function MeuModal({ visivel, onFechar }: Props) {
+export function MeuModal({ visivel, onFechar, titulo, descricao, botoes }: Props) {
   const theme = useColorScheme() ?? 'light';
   const corBotaoTexto = theme === 'light' ? '#FDF6E3' : Colors[theme].textDois;
 
@@ -22,21 +31,18 @@ export function MeuModal({ visivel, onFechar }: Props) {
       animationOut="zoomOut"
     >
       <ThemedView style={styles.modal}>
-        <ThemedText type="subtitle" style={{ color: Colors[theme].textDois }}>Abrir GitHub?</ThemedText>
-        <ThemedText style={{ marginTop: 8 }}>Deseja abrir o GitHub no navegador?</ThemedText>
+        <ThemedText type="subtitle" style={{ color: Colors[theme].textDois }}>{titulo}</ThemedText>
+        <ThemedText style={{ marginTop: 8 }}>{descricao}</ThemedText>
         <ThemedView style={styles.botoes}>
-          <TouchableOpacity
-            style={[styles.btn, { backgroundColor: Colors[theme].botao }]}
-            onPress={onFechar}
-          >
-            <ThemedText style={{ color: corBotaoTexto }}>Cancelar</ThemedText>
-          </TouchableOpacity>
-          <TouchableOpacity
-            style={[styles.btn, { backgroundColor: '#065F46' }]}
-            onPress={() => { onFechar(); Linking.openURL('https://github.com/bnnto'); }}
-          >
-            <ThemedText style={{ color: corBotaoTexto }}>Abrir</ThemedText>
-          </TouchableOpacity>
+          {botoes.map((btn, index) => (
+            <TouchableOpacity
+              key={index}
+              style={[styles.btn, { backgroundColor: btn.cor ?? Colors[theme].botao }]}
+              onPress={() => { onFechar(); btn.onPress(); }}
+            >
+              <ThemedText style={{ color: corBotaoTexto }}>{btn.texto}</ThemedText>
+            </TouchableOpacity>
+          ))}
         </ThemedView>
       </ThemedView>
     </Modal>

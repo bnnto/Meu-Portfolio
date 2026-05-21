@@ -2,6 +2,7 @@
   "expo": {
     "name": "meu-portfolio-mobile",
     "slug": "meu-portfolio-mobile",
+    "owner": "bento-org",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/saturninho.png",
@@ -46,17 +47,17 @@
       "typedRoutes": true,
       "reactCompiler": true
     },
-    "extra": {
-      "router": {},
-      "eas": {
-        "projectId": "37841d6d-5328-40c7-9ccf-d362c3cdf2e2"
-      }
-    },
     "runtimeVersion": {
       "policy": "appVersion"
     },
     "updates": {
-      "url": "https://u.expo.dev/37841d6d-5328-40c7-9ccf-d362c3cdf2e2"
+      "url": "https://u.expo.dev/b20518b7-edc6-4c5d-a703-5488227069cc"
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "b20518b7-edc6-4c5d-a703-5488227069cc"
+      }
     }
   }
 }

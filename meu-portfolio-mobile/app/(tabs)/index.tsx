@@ -63,7 +63,7 @@ export default function Home(){
               |
             </Animated.Text>
           </ThemedView>
-          <ThemedText type="default">Estudante de Ciência da Computação</ThemedText>
+          <ThemedText type="default" style={{ fontSize: 15 }}>Estudante de Ciência da Computação</ThemedText>
           <ThemedText type="default">Back end · Front end</ThemedText>
           <TouchableOpacity 
               style={[styles.botao, { backgroundColor: Colors[theme].botao }]}

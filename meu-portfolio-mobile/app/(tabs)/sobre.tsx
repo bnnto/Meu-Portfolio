@@ -153,14 +153,14 @@ const styles =  StyleSheet.create({
     backgroundColor: 'transparent',
   },
   quadradinho: {
-    width: 90,
-    height: 90,
+    width: 100,
+    height: 100,
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: 10,
     gap: 6,
-    padding: 8,
+    padding: 1,
   },
   titulo: {
     fontFamily: Fonts?.serifBold, 
